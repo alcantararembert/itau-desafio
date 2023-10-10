@@ -1,0 +1,14 @@
+<div class="product ff-roboto-mono">
+    <img class="product-img" src="{{ product.imgUrl }}" alt="Product image - {{product.name}}">
+    <p class="name">{{ product.name }}</p>
+    <p class="price"><b>{{ product.price | currency: 'BRL' }}</b></p>
+    <div class="actions">
+        <button class="edit-button" (click)="this.update()">
+            <img src="../../../../assets/images/edit-icon.png" alt="Edit icon">
+        </button>
+        <button class="delete-button" (click)="this.delete()">
+            <img src="../../../../assets/images/delete-icon.png" alt="Delete icon">
+        </button>
+    </div>
+</div>
+  

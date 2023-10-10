@@ -1,0 +1,26 @@
+<section class="container">
+  <header class="header d-flex">
+    <div class="buttons">
+      <div class="searching-products">
+        <input class="filter" type="search" placeholder="Searching..." autofocus [(ngModel)]="filter" (keyup)="searchingProducts()">
+        <img src="../../../../assets/images/lens.png" alt="Blue lens">
+      </div>
+      <button routerLink="/create" class="button"><b>Add product</b></button>
+    </div>
+    <h2 class="ff-sans">Products</h2>
+  </header>
+  <div class="list-products" *ngIf="products.length > 0, else withoutProducts">
+    <div *ngFor="let product of products">
+      <app-card [product]="product"></app-card>
+    </div>
+  </div>
+</section>
+<app-button-more [moreProducts]="moreProducts" (click)="loadMoreProducts()"></app-button-more>
+<ng-template #withoutProducts>
+  <div class="ff-sans without-products">
+    <p>There are no registered products yet!</p>
+  </div>
+</ng-template>
+  
+  
+  

@@ -1,5 +1,15 @@
 # ItauCadastroProdutoCrud
 
+## Starting the Mock Server
+
+Before running the project, you should start a mock server to simulate backend responses. Follow these steps:
+
+1. Open your terminal or command prompt.
+
+2. Navigate to the "backend" folder of your project using the `cd` command. Assuming the backend folder is located within your project's root directory:
+
+3. Run `npm start` for a mock server. Navigate to `http://localhost:3000/products`.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
 
 ## Development server

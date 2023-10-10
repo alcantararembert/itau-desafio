@@ -1,0 +1,29 @@
+<section class="container create ff-sans">
+    <header class="header">
+        <h2>Edit a product:</h2>
+    </header>
+    <form [formGroup]="editForm" *ngIf="editForm">
+        <label for="name">Product</label>
+        <input class="input" type="text" id="name" formControlName="name" placeholder="Product name"/>
+        <div class="message__error" *ngIf="editForm.get('name')?.errors?.['required'] && editForm.get('name')?.touched" >
+            Product is required!
+        </div>
+        <div class="message__error" *ngIf="editForm.get('name')?.errors?.['minlength'] && editForm.get('name')?.touched">
+            Product must have at least 3 characters!
+        </div>
+        <label for="price">Price</label>
+        <input class="input" type="number" id="price" formControlName="price" placeholder="0.00"/>
+        <div class="message__error" *ngIf="editForm.get('price')?.errors && editForm.get('price')?.touched">
+            Price is required!
+        </div>
+        <label for="imgUrl">Image URL</label>
+        <input class="input" type="text" id="imgUrl" formControlName="imgUrl" placeholder="https://s3.amazonaws.com/your-bucket-name/your-image-key.jpg"/>
+        <div class="message__error" *ngIf="editForm.get('imgUrl')?.errors && editForm.get('imgUrl')?.touched" >
+            Image URL is required!
+        </div>
+        <div class="action">
+            <button [disabled]="!editForm.valid" (click)="update()" [ngClass]="disableButton()">Save</button>
+            <button class="button" (click)="cancel()">Cancel</button>
+        </div>
+    </form>
+</section>

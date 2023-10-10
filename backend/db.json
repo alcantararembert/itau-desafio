@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Macarrão",
+      "price": 4.99,
+      "imgUrl": "https://images-americanas.b2w.io/produtos/3087068963/imagens/macarrao-renata-superiori-int-spag-500g/3087068963_1_large.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Arroz",
+      "price": 8,
+      "imgUrl": "https://images-americanas.b2w.io/produtos/7362548065/imagens/arroz-branco-longo-fino-tipo-1-camil-1kg/7362548065_1_large.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Café",
+      "price": 22.9,
+      "imgUrl": "https://images-americanas.b2w.io/produtos/7039779074/imagens/cafe-do-ponto-exportacao-500g/7039779091_1_large.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Biscoito",
+      "price": 2.99,
+      "imgUrl": "https://images-americanas.b2w.io/produtos/44630317/imagens/biscoito-recheado-passatempo-chocolate-130g-nestle/44630317_1_large.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Água",
+      "price": 2,
+      "imgUrl": "https://images-americanas.b2w.io/produtos/73865687/imagens/agua-mineral-crystal-sem-gas-500ml/73865687_1_large.jpg"
+    }
+  ]
+}

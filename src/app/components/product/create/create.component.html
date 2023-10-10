@@ -1,0 +1,29 @@
+<section class="container create ff-sans">
+    <header class="header">
+        <h2>Add a product:</h2>
+    </header>
+    <form [formGroup]="form">
+        <label for="name">Product</label>
+        <input class="input" type="text" id="name" formControlName="name" placeholder="Product name"/>
+        <div class="message__error" *ngIf="form.get('name')?.errors?.['required'] && form.get('name')?.touched" >
+            Product is required!
+        </div>
+        <div class="message__error" *ngIf="form.get('name')?.errors?.['minlength'] && form.get('name')?.touched">
+            Product must have at least 3 characters!
+        </div>
+        <label for="price">Price</label>
+        <input class="input" type="number" id="price" formControlName="price" placeholder="0.00"/>
+        <div class="message__error" *ngIf="form.get('price')?.errors && form.get('price')?.touched">
+            Price is required!
+        </div>
+        <label for="imgUrl">Image URL</label>
+        <input class="input" type="text" id="imgUrl" formControlName="imgUrl" placeholder="https://s3.amazonaws.com/your-bucket-name/your-image-key.jpg"/>
+        <div class="message__error" *ngIf="form.get('name')?.errors?.['required'] && form.get('name')?.touched" >
+            Image URL is required!
+        </div>
+        <div class="action">
+            <button [disabled]="!this.form.valid" (click)="create()" [ngClass]="disableButton()">Save</button>
+            <button class="button" (click)="cancel()">Cancel</button>
+        </div>
+    </form>
+</section>

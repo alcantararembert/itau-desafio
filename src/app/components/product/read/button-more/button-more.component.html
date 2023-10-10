@@ -1,0 +1,6 @@
+<div class="center" *ngIf="moreProducts; else withoutProducts">
+    <button class="button more">More</button>
+</div>
+<ng-template #withoutProducts>
+    <p class="message-center ff-sans">There are no more products to display</p>
+</ng-template>

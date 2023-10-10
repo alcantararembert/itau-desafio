@@ -1,0 +1,58 @@
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .button {
+    margin: 5px;
+    margin-top: 70px;
+    width: 200px;
+  }
+  
+  .create {
+    padding: 2rem 0;
+  }
+  
+  .create form {
+    background: #dde7eb;
+  
+    border: none;
+    border-radius: 20px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    padding: 2rem;
+  }
+  
+  .create form label {
+    color: #154580;
+    font-weight: bold;
+    margin: 0 0 1rem;
+  }
+  
+  .create form .input {
+    border: none;
+    height: 40px;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin: 0.5rem 0 2rem;
+  }
+  
+  .message__error {
+    font-size: 12px;
+    margin-left: 5px;
+    color: red;
+    margin-top: -25px;
+    margin-bottom: 20px;
+  }
+  
+  .button__disabled {
+    margin: 5px;
+    margin-top: 70px;
+    width: 200px;
+    background-color: gray !important;
+  }
+  
